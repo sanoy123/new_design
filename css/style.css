@@ -6,6 +6,7 @@
  * CH0 - News
  * CH0 - Crisis
  * CH0 - Media & Vacancies
+ * CH0 - Article
  * CH0 - Footer
  * CH0 - Miscellaneous
 **/
@@ -725,7 +726,7 @@ input#field:focus + .close span.back {
 
 
 /* ===============
-   CH07 - Media and Vacancies
+   CH0 - Media & Vacancies
    =============== */
 
 .media-bk {
@@ -738,7 +739,23 @@ input#field:focus + .close span.back {
 
 
 /* ===============
-   CH08 - Footer
+   CH0 - Article
+   =============== */
+
+.article {
+    margin-top: 7em;
+    margin-bottom: 3em;
+}
+
+@media (max-width: 767px) {
+    .article {
+        margin-top: 1em;
+    }
+}
+
+
+/* ===============
+   CH0 - Footer
    =============== */
 
 .footer {
