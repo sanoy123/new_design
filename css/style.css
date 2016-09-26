@@ -47,7 +47,8 @@ p {
 
 p,
 .paragraph {
-    max-width: 560px;
+    max-width: 640px;
+    margin-bottom: 20px;
 }
 
 
@@ -62,7 +63,6 @@ h1 {
 
 h2 {
     font-family: 'Roboto Slab', serif;
-    letter-spacing: 1.2px;
 }
 
 h3 {
@@ -92,7 +92,8 @@ h4.background:before {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 55%;
+    width: 300px;
+    max-width: 100%;
     z-index: -1;
 }
 
@@ -100,6 +101,29 @@ h4.background span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
     /*  background: #fff;*/
     padding: 0 15px;
+}
+
+
+/*Related content*/
+
+.related {
+    margin-top: 50px;
+}
+
+.related,
+.related p {
+    font-size: 15px;
+    color: #777777;
+}
+
+.related h2 {
+    color: #777777;
+    margin-bottom: 40px;
+   
+}
+
+.related h4 {
+    color: #026cb6;
 }
 
 
@@ -148,8 +172,6 @@ h4.background span {
     vertical-align: -0.4em;
     display: block;
 }
-
-
 
 
 /*Warning*/
@@ -981,6 +1003,31 @@ input#field:focus + .close span.back {
     margin-bottom: 16px;
 }
 
+.picture {
+    position: relative;
+}
+
+.picture img {
+    width: 100%;
+}
+
+.caption-credit {
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    padding: 10px 19px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 14px;
+    color: #777777;
+    margin: 20px 0;
+}
+
 
 /* ===============
    CH0 - Footer
@@ -1011,6 +1058,10 @@ input#field:focus + .close span.back {
 
 .grey-bk {
     background: #e6e7e8;
+}
+
+.white-bk {
+    background: #ffffff;
 }
 
 .dark-blue-bk {
