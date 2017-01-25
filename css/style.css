@@ -131,7 +131,7 @@ h4.background span {
 }
 
 .related h4 {
-    color: #52a8ff;
+    color: #418FDE;
 }
 
 
@@ -147,7 +147,7 @@ h4.background span {
 }
 
 .title-article {
-    color: #52a8ff;
+    color: #418FDE;
     margin: 0 0 20px 0;
 }
 
@@ -185,7 +185,7 @@ h4.background span {
 /*Warning*/
 
 .warning-message {
-    color: #52a8ff;
+    color: #418FDE;
     font-size: 40px;
 }
 
@@ -201,7 +201,7 @@ h4.background span {
 }
 
 .blue {
-    color: #52a8ff;
+    color: #418FDE;
 }
 
 #orange {
@@ -243,16 +243,16 @@ a .glyphicon {
     border: none;
     border-radius: 4px;
     background: none;
-    border: solid 1px #52a8ff;
-    color: #52a8ff;
+    border: solid 1px #418FDE;
+    color: #418FDE;
     margin-bottom: 20px;
 }
 
 .btn:hover,
 .btn:focus {
-    background: -moz-linear-gradient( 110deg, rgb(82, 168, 255) 50%, rgba(167, 169, 172, 0.95) 135%);
-    background: -webkit-linear-gradient( 110deg, rgb(82, 168, 255) 50%, rgba(167, 169, 172, 0.95) 135%);
-    background: -ms-linear-gradient( 110deg, rgb(82, 168, 255) 50%, rgba(167, 169, 172, 0.95) 135%);
+    background: -moz-linear-gradient( 110deg, rgb(65, 143, 222) 50%, rgba(167, 169, 172, 0.95) 135%);
+    background: -webkit-linear-gradient( 110deg, rgb(65, 143, 222) 50%, rgba(167, 169, 172, 0.95) 135%);
+    background: -ms-linear-gradient( 110deg, rgb(65, 143, 222) 50%, rgba(167, 169, 172, 0.95) 135%);
     color: #ffffff;
 }
 
@@ -264,7 +264,7 @@ a .glyphicon {
 .btn-white:hover,
 .btn-white:focus {
     background: #ffffff;
-    color: #52a8ff;
+    color: #418FDE;
 }
 
 
@@ -500,12 +500,12 @@ a .glyphicon {
    =============== */
 
 .navbar {
-    background: rgba(82, 168, 255, .6);
+    background: rgba(65, 143, 222, .6);
 }
 
 @media (max-width: 992px) {
     .navbar {
-        background: rgba(82, 168, 255, 1) !important;
+        background: rgba(65, 143, 222, 1) !important;
     }
 }
 
@@ -770,10 +770,6 @@ input#field:focus + .close span.back {
    CH04 - Intro
    =============== */
 
-.section-title {
-    padding-bottom: 40px;
-}
-
 .intro img {
     border: solid 1px #498ebf;
     border-radius: 100%;
@@ -835,7 +831,7 @@ input#field:focus + .close span.back {
 /*Country Pages*/
 
 .countryname {
-    background: #52a8ff;
+    background: #418FDE;
     display: block;
     position: absolute;
     padding: 0 40px;
@@ -879,7 +875,7 @@ body.country h1 {
 }
 
 .about-box {
-    background: #52a8ff;
+    background: #418FDE;
     color: #FFFFFF;
     width: 100%;
     height: auto;
@@ -891,7 +887,7 @@ body.country h1 {
     position: absolute;
     top: -18px;
     right: 0;
-    background: #52a8ff;
+    background: #418FDE;
     color: #FFFFFF;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -959,7 +955,7 @@ body.country h1 {
     display: block;
     height: 100px;
     width: 100%;
-    background: #52a8ff;
+    background: #418FDE;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -1034,7 +1030,7 @@ body.country h1 {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 10px;
-    border-left: 1px solid #52a8ff;
+    border-left: 1px solid #418FDE;
     box-sizing: border-box;
 }
 
@@ -1171,7 +1167,7 @@ p.viewmore a {
 }
 
 .funding-percentage {
-    color: #52a8ff;
+    color: #418FDE;
     font-size: 62px;
     line-height: 62px;
     text-align: center;
@@ -1186,7 +1182,7 @@ p.viewmore a {
     width: 100%;
     box-sizing: border-box;
     background: #e8e9ec;
-    color: #52a8ff;
+    color: #418FDE;
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     padding: 5px 10px;
@@ -1479,7 +1475,7 @@ ul.overview-list li:before {
 }
 
 .date {
-    color: #52a8ff;
+    color: #418FDE;
     font-family: 'Roboto', sans-serif;
     text-align: right;
 }
@@ -1682,15 +1678,21 @@ blockquote {
 /*NEW CSS JANUARY 2017*/
 
 .donate-top-button {
-    margin-top: 0;
+    margin-top: 3px;
+    padding: 10px 15px !important;
+    background: #fa575d;
+    border: none !important;
+
+}
+
+#donate:hover,
+#donate:focus {
+    opacity: .95;
+    color: #545454 !important;
     background: #ff5352;
+
 }
 
-.title-line {
-    border-bottom: 1px #52a8ff solid;
-    margin-top: -66px;
-}
-
-h1 span {
-    padding: 20px;
+.fa {
+    color: #545454;
 }
