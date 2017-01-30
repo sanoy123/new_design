@@ -771,10 +771,8 @@ input#field:focus + .close span.back {
    =============== */
 
 .intro img {
-    border: solid 1px #498ebf;
-    border-radius: 100%;
-    padding: 10px;
-    max-width: 100px;
+    padding: 5px;
+    max-width: 130px;
     margin-bottom: 30px;
 }
 
@@ -1682,7 +1680,16 @@ blockquote {
     padding: 10px 15px !important;
     background: #fa575d;
     border: none !important;
+}
 
+.donate-block-button {
+    margin-top: 3px;
+    padding: 0 40px !important;
+    background: #fa575d;
+    border: none !important;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: bold;
 }
 
 #donate:hover,
@@ -1690,9 +1697,67 @@ blockquote {
     opacity: .95;
     color: #545454 !important;
     background: #ff5352;
-
 }
 
 .fa {
     color: #545454;
+}
+
+.card {
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    min-height: 500px;
+    padding: 45px;
+    padding-top: 25px;
+}
+
+.bg-pattern {
+    background: url("../img/bg-pattern.png") repeat 0 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    color: #333333;
+}
+
+.media-thumbnail {
+    object-fit: cover;
+    width: 100%;
+    height: 195px;
+    border-top: 4px solid #FBBA72;
+    border-bottom: 4px solid #FBBA72;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fa-angle-double-right {
+    color: #FBBA72;
+}
+
+.media-link {
+    margin-top: 20px;
+}
+
+.media-link a {
+    color: #333333;
+}
+
+.yellow-bk {
+    background: #F7DD72;
+}
+
+.brown-bk {
+    background: #C9C19F;
+}
+
+.light-blue-bk {
+    background: #CCDDE2;
+}
+
+.apricot-bk {
+    background: #FBBA72;
 }
