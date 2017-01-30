@@ -1707,7 +1707,7 @@ blockquote {
     background-color: #FFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
-    min-height: 500px;
+    min-height: 650px;
     padding: 45px;
     padding-top: 25px;
 }
@@ -1746,18 +1746,20 @@ h4 {
     color: #333333;
 }
 
-.yellow-bk {
-    background: #F7DD72;
+.more-media-center {
+    margin-top: 50px;
+   
 }
 
-.brown-bk {
-    background: #C9C19F;
+.more-media-center a {
+    color: #FBBA72;
+    border: solid 1px #FBBA72;
+    font-weight: bold;
 }
 
-.light-blue-bk {
-    background: #CCDDE2;
-}
-
-.apricot-bk {
-    background: #FBBA72;
+.more-media-center a:hover,
+.more-media-center a:focus {
+    color: #333333;
+    font-weight: bold;
+    background: #FBBA72
 }
