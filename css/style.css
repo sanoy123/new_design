@@ -1734,12 +1734,14 @@ h4 {
     background-color: #FFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
-    min-height: 530px;
-    padding: 15px 25px;
+    min-height: 550px;
+    padding: 20px 25px;
+    
 }
 
 .icon-media {
     width: 80px;
+    margin-top: 15px;
 }
 
 
@@ -1748,7 +1750,6 @@ h4 {
     width: 235px;
     height: 165px;
     padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .media-link .fa-angle-double-right {
