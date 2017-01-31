@@ -494,6 +494,10 @@ a .glyphicon {
     background: #005cff;
 }
 
+.social .fa-medium:hover {
+    background: #00AB6C;
+}
+
 
 /* ===============
    CH03 - Header & Navigation
@@ -1541,11 +1545,6 @@ ul.overview-list li:before {
     }
 }
 
-.newsletter {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 
 /* ===============
    CH0 - Miscellaneous
@@ -1677,6 +1676,7 @@ blockquote {
 
 
 /*donate button*/
+
 .donate-top-button {
     margin-top: 3px;
     padding: 10px 15px !important;
@@ -1702,8 +1702,6 @@ blockquote {
 }
 
 
-
-
 /*background*/
 
 .bg-pattern {
@@ -1717,7 +1715,9 @@ blockquote {
     color: #545454;
 }
 
+
 /*headers*/
+
 h1,
 h2,
 h3,
@@ -1728,6 +1728,7 @@ h4 {
     margin-bottom: 20px;
 }
 
+
 /*media centre home*/
 
 .card {
@@ -1736,14 +1737,12 @@ h4 {
     margin-bottom: 30px;
     min-height: 550px;
     padding: 20px 25px;
-    
 }
 
 .icon-media {
     width: 80px;
     margin-top: 15px;
 }
-
 
 .media-thumbnail {
     object-fit: cover;
@@ -1764,7 +1763,6 @@ h4 {
     color: #333333;
 }
 
-
 .more-media-center {
     margin-top: 20px;
 }
@@ -1780,4 +1778,25 @@ h4 {
     color: #333333;
     font-weight: bold;
     background: #FBBA72
+}
+
+
+/*footer*/
+
+.bottom-footer {
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.donate-footer-button {
+    padding: 7px 35px !important;
+}
+
+.input-group {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-icon {
+    width: 80px;
 }
