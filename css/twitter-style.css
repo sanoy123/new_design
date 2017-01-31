@@ -1,0 +1,41 @@
+.icon-tw {
+    font-size: 3em !important;
+    margin-left: 20px;
+    vertical-align: middle !important;
+}
+
+.blue-tw {
+    color: #1da1f2 !important;
+}
+
+.avatar-social-media {
+    border-radius: 100%;
+    max-width: 90px;
+}
+
+.twitter-block {
+
+    padding-top: 30px;
+}
+
+.twitter-block a:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+.timeline-Tweet-text{
+     font-family: 'Crimson Text', serif;
+    font-size: 26px;
+    text-align: center;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+
+.timeline-Tweet-action, .timeline-Tweet-metadata, .timeline-Tweet-author, .timeline-Header, .timeline-Tweet-brand, .timeline-Footer {
+    display: none !important;
+}
+
+.customisable-border{
+    border: none !important;
+}
