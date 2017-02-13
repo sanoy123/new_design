@@ -8,13 +8,16 @@
     color: #1da1f2 !important;
 }
 
+.blue-fb {
+    color: #4060A5 !important;
+}
+
 .avatar-social-media {
     border-radius: 100%;
     max-width: 90px;
 }
 
 .twitter-block {
-
     padding-top: 30px;
 }
 
@@ -23,19 +26,23 @@
     opacity: .8;
 }
 
-.timeline-Tweet-text{
-     font-family: 'Crimson Text', serif;
+.timeline-Tweet-text {
+    font-family: 'Crimson Text', serif;
     font-size: 26px;
     text-align: center;
     max-width: 650px;
     margin: 20px auto;
 }
 
-
-.timeline-Tweet-action, .timeline-Tweet-metadata, .timeline-Tweet-author, .timeline-Header, .timeline-Tweet-brand, .timeline-Footer {
+.timeline-Tweet-action,
+.timeline-Tweet-metadata,
+.timeline-Tweet-author,
+.timeline-Header,
+.timeline-Tweet-brand,
+.timeline-Footer {
     display: none !important;
 }
 
-.customisable-border{
+.customisable-border {
     border: none !important;
 }

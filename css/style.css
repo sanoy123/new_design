@@ -1800,3 +1800,15 @@ h4 {
 .contact-icon {
     width: 80px;
 }
+
+
+/*footer content center in tablet and phone*/
+
+@media screen and (max-width: 991px) {
+    .footer {
+        text-align: center;
+    }
+    .footer img {
+        margin: 0 auto;
+    }
+}
