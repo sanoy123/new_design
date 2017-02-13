@@ -1812,3 +1812,15 @@ h4 {
         margin: 0 auto;
     }
 }
+
+
+/*menu in one line for medium sizes */
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    #logo img{
+        width:210px;
+    }
+  
+}
+
+
