@@ -1817,10 +1817,58 @@ h4 {
 /*menu in one line for medium sizes */
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    #logo img{
-        width:210px;
+    #logo img {
+        width: 210px;
     }
-  
 }
 
 
+/*fix breadcrum navigation*/
+
+.article {
+    margin-top: 0;
+}
+
+
+/*fix menu when no hero img*/
+
+.not-hero-img-menu {
+    background: rgb(65, 143, 222) !important;
+}
+
+.not-hero-img-content {
+    margin-top: 88px !important;
+}
+
+
+/*breadcrum style*/
+
+.breadcrumb {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/*Navigate by theme issues collapse section*/
+
+.panel-title {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.subthemes li {
+    list-style: none;
+    font-style: italic;
+}
+
+.subthemes li:before {
+    content: "\f101";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    color: #337ab7;
+}
+
+.panel {
+    border: none;
+    box-shadow: none;
+}
