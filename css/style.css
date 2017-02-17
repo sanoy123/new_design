@@ -1854,6 +1854,27 @@ h4 {
 .panel-title {
     text-transform: uppercase;
     font-weight: normal;
+    line-height: 1.2;
+    padding: 5px;
+}
+
+.panel-title2 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 3px;
+}
+
+@media screen and (max-width: 992px) {
+    .panel-title,
+    .panel-title2 {
+        padding: 20px;
+    }
+}
+
+.panel-title2 a {
+    color: #333333 !important;
 }
 
 .subthemes li {
