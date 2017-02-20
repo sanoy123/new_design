@@ -640,7 +640,7 @@ a .glyphicon {
 }
 
 .hero-content {
-    max-width: 520px;
+    max-width: 720px;
     margin: 0 auto;
     padding-top: 90px;
 }
@@ -1892,4 +1892,25 @@ h4 {
 .panel {
     border: none;
     box-shadow: none;
+}
+
+
+/*Update hero*/
+
+.hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 90px;
+    text-shadow: 1px 1px 14px #333333;
+}
+
+.subscribe {
+    font-size: 18px;
+    font-weight: bold;
+    width: 50%;
+}
+
+
+.subscribe:hover {
+    text-shadow: none;
 }
