@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"/>
+	<head>
+		<!-- site style sheets -->
+		<style>
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.base.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.menus.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.messages.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/calendar/css/calendar_multiday.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/date/date_api/date.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/comment/comment.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/modules/node/node.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/field/field.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/views/css/views.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/search/search.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/user/user.base.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/user/user.theme.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/ckeditor/css/ckeditor.css?ollomd");
+		</style>
+		<style>
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/ctools/css/ctools.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/event_calendar/event_popup/css/event_popup.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/panels/css/panels.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/field_slideshow/field_slideshow.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/socbutt/css/socbutt.min.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/fontawesome/css/font-awesome.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/css/superfish.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/css/superfish-smallscreen.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/css/superfish-vertical.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/style/white.css?ollomd");
+		</style>
+		<style>
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/omega.development.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.normalize.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.hacks.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.styles.css?ollomd");
+		</style>
+		<style>
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/layouts/AboutUs/animate.css?ollomd");
+			@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/layouts/AboutUs/style.css?ollomd");
+		</style>
+		
+		<!-- modified styles on this page -->
+		<style>
+			#edit-field-top-stories-filters-tid-wrapper {
+				width:100%;
+			}
+			
+			#edit-field-top-stories-filters-tid-wrapper label {
+				width:100%;
+			}
+			.view-filters select {
+				border-radius:0;
+				background:transparent;
+				box-shadow: none;
+				border:2px #bfbfbf solid;
+				border-collapse: collapse;
+				height:40px;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				-o-appearance: none;
+				-ms-appearance: none;
+				appearance: none;
+				font-family:'Roboto Slab', serif;
+				font-size:16px;
+				font-weight:400;
+				color:#bfbfbf;
+				text-transform:uppercase;
+				text-indent:25px;
+				cursor:pointer;
+				width:100%;
+				float:none;
+			}
+			
+			.view-filters select:focus {
+				outline:none;
+				outline-style:none;
+			}
+			
+			.view-filters .form-type-select:before {
+				content:'\f078';
+				font-family:'FontAwesome';
+				display:block;
+				width:40px;
+				height:40px;
+				text-align:center;
+				line-height:40px;
+				vertical-align:middle;
+				background:#bfbfbf;
+				color:#FFFFFF;
+				position:absolute;
+				pointer-events:none;
+				font-size:12px;
+			}
+			
+			.view-filters option:not([selected="selected"]) {
+				text-transform: none;
+			}
+			.view-filters option[selected="selected"] {
+				font-weight:700;
+			}
+			.view-filters optgroup {
+				background:#efefef;
+				padding:10px 20px;
+			}
+			
+			.view-filters option {
+				padding:0 10px;
+				color:#9d9d9d;
+				border:none;
+			}
+			
+			.view-filters option:hover {
+				outline-color:#bfbfbf;
+				color:#FFFFFF;
+			}
+			.view-filters option:before {
+				content: '\2022';
+				margin-right:10px;
+				font-size:10px;
+			}
+			.view-filters optgroup option:first-of-type::before {
+				content:'';
+				margin:0;
+			}
+			
+			.filter-tags {
+				padding:10px 0;
+				clear:both;
+			}
+			
+			.filter-tags .filter {
+				padding:8px 20px;
+				color:#FFFFFF;
+				background:#bfbfbf;
+				margin:0 5px 0 0;
+				width:auto;
+				position:relative;
+				font-family:'Roboto Slab', serif;
+				text-transform:uppercase;
+				font-size:14px;
+				line-height:40px;
+			}
+			
+			.filter-tags .filter:hover {
+				background:#aeaeae;
+			}
+			
+			.filter-close {
+				margin-right:-10px;
+				margin-left:10px;
+				color:inherit;
+			}
+			
+			.filter-close:hover, .filter-close:active, .filter-close:focus {
+				color:inherit;
+			}
+			.filter-field {
+				float:left;
+				width:32%;
+				margin:0 3% 0 0;
+			}
+			.filter-keyword {
+				height:40px;
+				border:2px #bfbfbf solid;
+				margin:0;
+				font-family:'Roboto Slab', serif;
+				font-size:16px;
+				padding: 0 20px;
+				width:calc(100% - 50px);
+			}
+			.filter-keyword::-webkit-input-placeholder {
+			   color: #cdcdcd;
+			   font-style:italic;
+			   font-weight:100;
+			}
+			
+			.filter-keyword:-moz-placeholder { 
+			   color: #cdcdcd;
+			   font-style:italic;
+			   font-weight:100;
+			}
+			
+			.filter-keyword::-moz-placeholder {  
+			   color: #cdcdcd;
+			   font-style:italic;
+			   font-weight:100;
+			}
+			
+			.filter-keyword:-ms-input-placeholder {  
+			   color: #cdcdcd; 
+			   font-style:italic;
+			   font-weight:100; 
+			}
+			.form-submit {
+				width:40px;
+				height:40px;
+				background:#bfbfbf;
+				color:#FFFFFF;
+				border:none;
+				border-collapse:collapse;
+				font-family:'FontAwesome';
+				margin:0 !important;
+				float:left;
+			}
+			
+			.form-submit:hover {
+				background:#aeaeae;
+			}
+		</style>
+	</head>
+	<body>
+<iframe src="https://ocha.smugmug.com/frame/slideshow?key=CFsf9N&autoStart=1&captions=1&navigation=1&playButton=1&randomize=0&speed=3&transition=fade&transitionSpeed=2" width="800" height="600" frameborder="no" scrolling="no"></iframe>	</body>
+</html>
+
+

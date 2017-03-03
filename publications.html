@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8"/>
+	<head>
+		 <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e47e4f98d6?a=44799498&amp;v=1016.8b58850&amp;to=bgNRZhdZXEtTUBcPXVdJclERUV1WHV0MAldmFlJVAGdEUVdE&amp;rst=3880&amp;ref=https://www.sandbox.unochaorg.568elmp03.blackmesh.com/page/publication&amp;ap=948&amp;be=1293&amp;fe=2547&amp;dc=1710&amp;perf=%7B%22timing%22:%7B%22of%22:1487930861880,%22n%22:0,%22u%22:1234,%22ue%22:1241,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22ce%22:1,%22rq%22:1,%22rp%22:1118,%22rpe%22:1439,%22dl%22:1234,%22di%22:2946,%22ds%22:2946,%22de%22:3056,%22dc%22:3831,%22l%22:3831,%22le%22:3848%7D,%22navigation%22:%7B%7D%7D&amp;at=QkRSEF9DT0U%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1016.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+		<meta http-equiv="cleartype" content="on">
+		<link rel="apple-touch-icon-precomposed" href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/apple-touch-icon-precomposed-114x114.png" sizes="114x114">
+		<link rel="apple-touch-icon-precomposed" href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/apple-touch-icon-precomposed-144x144.png" sizes="144x144">
+		<link rel="apple-touch-icon-precomposed" href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/apple-touch-icon-precomposed-72x72.png" sizes="72x72">
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<link rel="canonical" href="/page/publication">
+		<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+		<link rel="shortlink" href="/node/913674">
+		<link rel="shortcut icon" href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/misc/favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
+		<meta name="viewport" content="width=device-width">
+		  <title>Publication | OCHA</title>
+		  <style>
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.base.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.menus.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.messages.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/system/system.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/calendar/css/calendar_multiday.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/date/date_api/date.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/comment/comment.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/modules/node/node.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/field/field.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/views/css/views.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/search/search.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/user/user.base.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/modules/user/user.theme.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/ckeditor/css/ckeditor.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?olunod");
+		</style>
+		<style>
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/ctools/css/ctools.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/event_calendar/event_popup/css/event_popup.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/panels/css/panels.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/field_slideshow/field_slideshow.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/fontawesome/css/font-awesome.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/css/superfish.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/css/superfish-smallscreen.css?olunod");
+		</style>
+		<style>
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/css/omega.development.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.normalize.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.hacks.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.styles.css?olunod");
+		</style>
+		
+		<!--[if lte IE 8]>
+		<style>
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/unocha-main-site.no-query.css?olunod");
+		</style>
+		<![endif]-->
+		<style>
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/layouts/PublicationLanding/animate.css?olunod");
+		@import url("https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/css/layouts/PublicationLanding/style.css?olunod");
+		</style>
+		  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")</script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/misc/jquery.once.js?v=1.2"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/misc/drupal.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/omega/omega/js/no-js.js?olunod"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<script>window.jQuery.ui || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/media_colorbox/media_colorbox.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/colorbox/js/colorbox.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/event_calendar/event_popup/js/event_popup.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/event_calendar/event_popup/js/event_popup_validate.js?olunod"></script>
+		<script>jQuery(document).ready(function($) { 
+		    $.expr[':'].regex = function(elem, index, match) {
+		            var matchParams = match[3].split(','),
+		            validLabels = /^(data|css):/,
+		            attr = {
+		                method: matchParams[0].match(validLabels) ? 
+		                matchParams[0].split(':')[0] : 'attr',
+		                property: matchParams.shift().replace(validLabels,'')
+		            },
+		            regexFlags = 'ig',
+		            regex = new RegExp(matchParams.join('').replace(/^\s+|\s+$/g,''), regexFlags);
+		            return regex.test(jQuery(elem)[attr.method](attr.property));
+		        }
+		    });</script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/jquery.cycle/jquery.cycle.all.min.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/jquery.imagesloaded/jquery.imagesloaded.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/field_slideshow/field_slideshow.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/sfsmallscreen.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/superfish.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/libraries/superfish/supersubs.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/modules/contrib/superfish/superfish.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/js/unocha-main-site.behaviors.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/js/layouts/noMoreLonelyWords.js?olunod"></script>
+		<script src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/all/themes/unocha_main_site/js/layouts/wow.js?olunod"></script>
+		<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"event_popup":{"classes":"","defaults":"width:300;height:auto;position:[center,60]","selector":"content","content_type":"event_calendar","op":false},"field_slideshow":{"field-slideshow-1":{"fx":"fade","speed":"1000","timeout":"4000","pause":0,"start_on_hover":0,"carousel_visible":"3","carousel_scroll":"1","carousel_speed":"500","carousel_vertical":0,"carousel_circular":0,"carousel_follow":0,"carousel_skin":"","pager":"","controls":[]}},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast","autoArrows":false,"dropShadows":false},"plugins":{"smallscreen":{"mode":"window_width","breakpointUnit":"px","title":"Main menu"},"supersubs":true}}}});</script>
+		
+		  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800">
+		  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900,200" rel="stylesheet" type="text/css">
+		
+		  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Vollkorn:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+		
+		
+		<style>
+			.active-pointer:after {
+				content:'';
+				display:block;
+				width:30px;
+				height:30px;
+				background:rgb(230, 231, 232);
+				position:absolute;
+				left:50%;
+				margin-left:-15px;
+				bottom:-55px;
+				-ms-transform: rotate(45deg); 
+    			-webkit-transform: rotate(45deg);
+    			transform: rotate(45deg);
+			}
+			
+			.l-region--gho.active-pointer:after {
+				bottom:-35px;
+			}
+		</style>
+		</head>
+	
+
+	<body class="html not-front not-logged-in page-node page-node- page-node-913674 node-type-basic-page section-page" id="body">
+	   <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+	   <!--NAV-->
+	   <nav class="navbar navbar-default navbar-fixed-top" style="background: rgb(65, 143, 222) none repeat scroll 0% 0%;">
+	      <div class="container">
+	         <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar top-bar"></span>
+	            <span class="icon-bar middle-bar"></span>
+	            <span class="icon-bar bottom-bar"></span>
+	            </button>
+	            <div class="navbar-brand">
+	               <div class="l-region l-region--branding">
+	                  <div class="panel-pane pane-page-logo">
+	                     <a href="/" rel="home" id="logo" title="Home"><img src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/ocha_logo_1.png" alt="Home"></a>    
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+	         <div id="navbar" class="navbar-collapse collapse">
+	            <div class="l-region l-region--main-menu">
+	               <div class="panel-pane pane-block pane-superfish-1">
+	                  <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none superfish-processed sf-js-enabled">
+	                     <li id="menu-219-1" class="active-trail sf-depth-1 sf-no-children"><a href="/page/about-us" class="sf-depth-1"> ABOUT US</a></li>
+	                     <li id="menu-414-1" class="sf-depth-1 sf-no-children"><a href="/page/our-work" class="sf-depth-1">OUR WORK</a></li>
+	                     <li id="menu-415-1" class="sf-depth-1 sf-no-children"><a href="/page/ocha-presence" class="sf-depth-1">OCHA PRESENCE</a></li>
+	                     <li id="menu-1158-1" class="sf-depth-1 sf-no-children"><a href="/page/themes" class="sf-depth-1">THEMES</a></li>
+	                     <li id="menu-416-1" class="sf-depth-1 sf-no-children"><a href="/page/events" class="sf-depth-1"> EVENTS</a></li>
+	                     <li id="menu-1627-1" class="sf-depth-1 sf-no-children"><a href="/page/media-centre" class="sf-depth-1">MEDIA CENTRE</a></li>
+	                  </ul>
+	               </div>
+	            </div>
+	         </div>
+	         <!--/.nav-collapse -->
+	      </div>
+	   </nav>
+	   <!--MEDIA-->
+	   <div id="collapse-items">
+	   <div class="container publication container-first padding-block content">
+	      <div class="col-md-12">
+	         <div class="l-region l-region--breadcrumb">
+	            <div class="panel-pane pane-page-breadcrumb">
+	               <h2 class="element-invisible">You are here</h2>
+	               <ul class="breadcrumb">
+	                  <li><a href="/">Home</a></li>
+	                  <li>Publication</li>
+	               </ul>
+	            </div>
+	         </div>
+	      </div>
+	      <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+	         <div class="col-md-12">
+	            <h1 class="title-article" style=" text-align:center; ">PUBLICATIONS</h1>
+	            <div class="intro">
+	               <p></p>
+	               <div class="panel-pane pane-node-body">
+	                  <div class="field field--name-body field--type-text-with-summary field--label-hidden">
+	                     <div class="field__items">
+	                        <div class="field__item even" property="content:encoded">
+	                           <p>
+	                              OCHA produces an array of reports and publications, from in-depth analytical papers, to daily situation reports on major new crises and flagship annual appeals for humanitarian funding. ‘OCHA on-Message’ is a new reference series that enables us to communicate OCHA's definition of and better advocate action on a range of complex issues and concepts such as protection of civilians, internal displacement, and humanitarian access.
+	                           </p>
+	                        </div>
+	                     </div>
+	                  </div>
+	               </div>
+	               <p></p>
+	            </div>
+	         </div>
+	      </div>
+	      <div class="col-md-12 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+	         <div class="col-md-12">
+	            <h3 class="title-article">Core Publications</h3>
+	         </div>
+	         <div class="col-md-3 publication-item" style="display: block;">
+	            <!--<a href="#annualreportModal1" class="publication-link" data-toggle="modal">-->
+	            <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	            </a>
+	            <div class="l-region l-region--annual-report">
+	               <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	               </a>
+	               <div class="panel-pane pane-views pane-publication">
+	                  <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                  </a>
+	                  <div class="view view-publication view-id-publication view-display-id-block_2 view-dom-id-5140a2711708951e60cce149d1794ca2">
+	                     <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                     </a>
+	                     <div class="view-content">
+	                        <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                        </a>
+	                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+	                           <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                           </a>
+	                           <div class="views-field views-field-nothing">
+	                              <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">        <span class="field-content"> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/2015AR_cover.jpg?itok=kwDzQPGz" height="312" width="240">
+	                              </span></a>
+	                              <div align="center">
+	                                 <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                                 </a>
+	                                 <h4><a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1"><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/%20">OCHA Annual Report 2015</a></a></h4>
+	                                 <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">           
+	                                 </a>
+	                              </div>
+	                              <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                              </a>
+	                           </div>
+	                           <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">  </a>
+	                        </div>
+	                        <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                        </a>
+	                     </div>
+	                     <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	                     </a>
+	                  </div>
+	                  <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">    </a>
+	               </div>
+	               <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	               </a>
+	            </div>
+	            <a data-toggle="collapse" data-parent="#collapse-items" href="#annualreportModal1" aria-expanded="false" aria-controls="annualreportModal1">
+	            </a>
+	         </div>
+	         <div class="col-md-3" style="display: block;">
+	            <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	            </a>
+	            <div class="l-region l-region--plan-and-budget">
+	               <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	               </a>
+	               <div class="panel-pane pane-views pane-publication">
+	                  <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                  </a>
+	                  <div class="view view-publication view-id-publication view-display-id-block_7 view-dom-id-b0eb41c93e130e2131fd727d5eada549">
+	                     <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                     </a>
+	                     <div class="view-content">
+	                        <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                        </a>
+	                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+	                           <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                           </a>
+	                           <div class="views-field views-field-nothing">
+	                              <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">        <span class="field-content">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/OCHAin2016_cover.jpg?itok=YdnyIxt_" height="312" width="240">
+	                              </span></a>
+	                              <div align="center">
+	                                 <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                                 </a>
+	                                 <h4><a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1"><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHAin2016.pdf ">OCHA in 2016</a></a></h4>
+	                                 <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">           
+	                                 </a>
+	                              </div>
+	                              <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                              </a>
+	                           </div>
+	                           <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">  </a>
+	                        </div>
+	                        <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                        </a>
+	                     </div>
+	                     <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	                     </a>
+	                  </div>
+	                  <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">    </a>
+	               </div>
+	               <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	               </a>
+	            </div>
+	            <a data-toggle="collapse" data-parent="#collapse-items" href="#planbudgetModal1" aria-expanded="false" aria-controls="planbudgetModal1">
+	            </a>
+	         </div>
+	         <!--
+	            <div class="publication-modal modal fade" id="planbudgetModal1" tabindex="-1" role="dialog" aria-hidden="true">
+	                <div class="modal-dialog">
+	                   <div class="modal-content">
+	                     <div class="close-modal" data-dismiss="modal">
+	                           <div class="lr">
+	                               <div class="rl">
+	                               </div>
+	                           </div>
+	                     </div>
+	                     <div class="container">
+	                        <div class="row">
+	                          <div class="col-lg-12"><!-- col-lg-offset-2">
+	                            <div class="modal-body">
+	                              <h1>OCHA PLAN AND BUDGET</h1>
+	            
+	                                                          </div>
+	                          </div>
+	                        </div>
+	                      </div>
+	            
+	            
+	                   </div>
+	                 </div>
+	            </div>
+	            -->
+	         <div class="col-md-3" style="display: block;">
+	            <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	            </a>
+	            <div class="l-region l-region--gho">
+	               <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	               </a>
+	               <div class="panel-pane pane-views pane-publication">
+	                  <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                  </a>
+	                  <div class="view view-publication view-id-publication view-display-id-block_3 view-dom-id-7a9100ffce76ed21bcb6fb92ecc889a7">
+	                     <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                     </a>
+	                     <div class="view-content">
+	                        <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                        </a>
+	                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+	                           <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                           </a>
+	                           <div class="views-field views-field-nothing">
+	                              <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">        <span class="field-content">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/GHO2017.JPG?itok=WcbsBr_5" height="312" width="240">
+	                              </span></a>
+	                              <div align="center">
+	                                 <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                                 </a>
+	                                 <h4><a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1"><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/GHO_2017.pdf ">Global Humanitarian Overview 2017</a></a></h4>
+	                                 <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">           
+	                                 </a>
+	                              </div>
+	                              <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                              </a>
+	                           </div>
+	                           <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">  </a>
+	                        </div>
+	                        <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                        </a>
+	                     </div>
+	                     <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	                     </a>
+	                  </div>
+	                  <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">    </a>
+	               </div>
+	               <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	               </a>
+	            </div>
+	            <a data-toggle="collapse" data-parent="#collapse-items" href="#ghoModal1" aria-expanded="false" aria-controls="ghoModal1">
+	            </a>
+	         </div>
+	         <div class="col-md-3" style="display: block;">
+	            <div class="l-region l-region--thematic">
+	               <div class="panel-pane pane-views pane-publication">
+	                  <div class="view view-publication view-id-publication view-display-id-block_4 view-dom-id-b9392f99ff10c06c50bfafd8d5294481">
+	                     <div class="view-content">
+	                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/StrategicFramework2014-17.jpg?itok=bng4TRjC" height="312" width="240">
+	                                 <div align="center">
+	                                    <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/%20">Strategic Framework 2014-2017</a></h4>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <div class="container-fluid collapse grey-bk  padding-block content" id="annualreportModal1" aria-hidden="true">
+	      <div class="container">
+	         <div class="card card-block">
+	            <h2>Annual Reports</h2>
+	            <div class="l-region l-region--annual-report-list">
+	               <div class="panel-pane pane-views pane-publication">
+	                  <div class="view view-publication view-id-publication view-display-id-page_2 view-dom-id-bbcc84c4c1180f026a691cceed6cbb4f">
+	                     <div class="view-content">
+	                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	                           <!-- Carousel indicators -->
+	                           <ol class="carousel-indicators">
+	                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	                              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+	                              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+	                           </ol>
+	                           <!-- Carousel items -->
+	                           <div class="carousel-inner">
+	                              <div class="item next left">
+	                                 <div class="row-fluid">
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/2015AR_cover.jpg?itok=zNqXYxch" height="220" width="155"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/27May-FinalReport_MidResWeb2015.pdf ">OCHA Annual Report 2015</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td><span></span></td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/2014AR_cover.jpg?itok=V15T4OW9" height="220" width="160"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_AR_Flipbook_Low2014_0.pdf ">OCHA Annual Report 2014</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li>
+	                                                            <a href="http://www.unocha.org/2014annualreport/" target="_blank">Online version</a>
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/2013AR_cover.jpg?itok=zdk5uZeZ" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/2013%20OCHA%20Annual%20Report_0.pdf ">OCHA Annual Report 2013</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li>
+	                                                            <a href="http://www.unocha.org/annualreport/2013/" target="_blank">Online version</a>
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/AnnualReport2012_cover.jpg?itok=4lI-JadR" height="220" width="169"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/2012%20OCHA%20Annual%20Report_1.pdf ">OCHA Annual Report 2012</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li>
+	                                                            <a href="http://unocha.org/annualreport/2012/" target="_blank">Online version</a>
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHA_AR2011_cover.jpg?itok=RG_LlmCV" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/2011%20OCHA%20Annual%20Report%20Final%20150dpi.pdf ">OCHA Annual Report 2011</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <div class="field field-type-filefield field-field-image">
+	                                                         <div class="field-items">
+	                                                            <ul>
+	                                                               <li class="field-item odd">
+	                                                                  <a href="http://unocha.org/annualreport/2011/" target="_blank">Online version</a>
+	                                                               </li>
+	                                                            </ul>
+	                                                         </div>
+	                                                      </div>
+	                                                      <div class="field field-type-date field-field-published-date">
+	                                                         <div class="field-label">
+	                                                            &nbsp;
+	                                                         </div>
+	                                                      </div>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHA_2010_AR-cover.jpg?itok=kINDnTa9" height="220" width="169"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_2010AR_0.pdf ">OCHA Annual Report 2010</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li class="field-item odd">
+	                                                            <a href="http://www.unocha.org/annualreport/2010/index.html" target="_blank">Online&nbsp;version</a>
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                 </div>
+	                              </div>
+	                              <div class="item">
+	                                 <div class="row-fluid">
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/AR2009_175x226.jpg?itok=7brP6PvL" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA%20AR2009_Hi%20Res_Final.pdf ">OCHA Annual Report 2009</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li class="field-item odd">
+	                                                            <a href="http://www.unocha.org/annualreport/2009/index.html" target="_blank">Online&nbsp;version</a>
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2008.jpg?itok=E5PFhm8s" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_AnnualReport2008_High_0.pdf ">OCHA Annual Report 2008</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li class="field-item odd">
+	                                                            <a href="http://www.unocha.org/annualreport/2008/index.html" target="_blank">Online&nbsp;version</a>&nbsp;
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2007.gif?itok=zRReTNwr" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHAAnnualReport2007-ScreenRes_1.pdf ">OCHA Annual Report 2007</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <ul>
+	                                                         <li class="field-item odd">
+	                                                            <a href="http://www.unocha.org/annualreport/2007/index.html" target="_blank">Online version</a>&nbsp;<br>
+	                                                            &nbsp;
+	                                                         </li>
+	                                                      </ul>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2006_1.gif?itok=dhWL2YRV" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_AR_2006.pdf ">OCHA Annual Report 2006</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <div class="field field-type-filefield field-field-image">
+	                                                         <div class="field-items">
+	                                                            <div class="field-item odd">
+	                                                               &nbsp;
+	                                                            </div>
+	                                                         </div>
+	                                                      </div>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2005_0.gif?itok=GRtLCAjz" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/ocha_ar2005_web_low.pdf ">OCHA Annual Report 2005</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <div class="field field-type-filefield field-field-image">
+	                                                         <div class="field-items">
+	                                                            <div class="field-item odd">
+	                                                               &nbsp;
+	                                                            </div>
+	                                                         </div>
+	                                                      </div>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2004.gif?itok=Sf1kEwbS" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_AR2004_final2.pdf ">OCHA Annual Report 2004</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <div class="field field-type-filefield field-field-image">
+	                                                         <div class="field-items">
+	                                                            <div class="field-item odd">
+	                                                               &nbsp;
+	                                                            </div>
+	                                                         </div>
+	                                                      </div>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                 </div>
+	                              </div>
+	                              <div class="item active left">
+	                                 <div class="row-fluid">
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2003.jpg?itok=iL9A1vX2" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/ocha_ar2003.pdf ">OCHA Annual Report 2003</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <div class="field field-type-filefield field-field-image">
+	                                                         <div class="field-items">
+	                                                            <div class="field-item odd">
+	                                                               &nbsp;
+	                                                            </div>
+	                                                         </div>
+	                                                      </div>
+	                                                      <p>
+	                                                         &nbsp;
+	                                                      </p>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                    <div class="col-xs-2">
+	                                       <table border="0">
+	                                          <tbody>
+	                                             <tr>
+	                                                <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ar2002_0.jpg?itok=3sMNpF-Z" height="220" width="170"></td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/ocha-annual-2002.pdf ">OCHA Annual Report 2002</a></h4>
+	                                                </td>
+	                                             </tr>
+	                                             <tr>
+	                                                <td>
+	                                                   <span>
+	                                                      <div class="field field-type-filefield field-field-image">
+	                                                         <div class="field-items">
+	                                                            <div class="field-item odd">
+	                                                               &nbsp;
+	                                                            </div>
+	                                                         </div>
+	                                                      </div>
+	                                                   </span>
+	                                                </td>
+	                                             </tr>
+	                                          </tbody>
+	                                       </table>
+	                                    </div>
+	                                 </div>
+	                              </div>
+	                           </div>
+	                           <!-- Carousel navigation
+	                              <a class="left carousel-control" style="cursor: pointer;" data-target="#myCarousel" data-slide="prev"><i class="fa fa-3x fa-chevron-left"></i></a>
+	                                <a class="right carousel-control" style="cursor: pointer;" data-target="#myCarousel" data-slide="next"><i class="fa fa-3x fa-chevron-right"></i></a>
+	                              -->
+	                           <a class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+	                           <i class="fa fa-3x fa-chevron-left"></i>
+	                           </a>
+	                           <a class="right carousel-control" data-target="#myCarousel" role="button" data-slide="next">
+	                           <i class="fa fa-3x fa-chevron-right"></i>
+	                           </a>
+	                        </div>
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <div class="container-fluid collapse grey-bk  padding-block content" id="planbudgetModal1" aria-hidden="true">
+	      <div class="container">
+	         <div class="card card-block">
+	            <h2>OCHA Plan and Budget</h2>
+	            <div class="l-region l-region--ocha-plan-and-budget">
+	               <div class="panel-pane pane-views pane-publication">
+	                  <div class="view view-publication view-id-publication view-display-id-page_3 view-dom-id-2e060143e4a4e94986b31419d877ac8b">
+	                     <div class="view-content">
+	                        <div class="views-row views-row-1 views-row-odd views-row-first">
+	                           <div class="col-md-2">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHAin2016_cover.jpg?itok=zwbzb7zw" height="220" width="156">
+	                              <div align="center">
+	                                 <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHAin2016.pdf ">OCHA in 2016</a></h4>
+	                              </div>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-2 views-row-even">
+	                           <div class="col-md-2">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHA-IN-img.png?itok=VCVpk3Eg" height="220" width="155">
+	                              <div align="center">
+	                                 <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_in_2014-15_update_0.pdf ">OCHA in 2014 &amp; 2015: Updated Plan and Budget</a></h4>
+	                              </div>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-3 views-row-odd">
+	                           <div class="col-md-2">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/ocha-in-2014_0.png?itok=2omW4bUr" height="220" width="172">
+	                              <div align="center">
+	                                 <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA%20in%202014-15%20vF%2072%20dpi%20single%20WEB_0.pdf ">OCHA in 2014 &amp; 2015</a></h4>
+	                              </div>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-4 views-row-even">
+	                           <div class="col-md-2">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHA2012_13Cover_0.jpg?itok=DZ50M6aJ" height="220" width="169">
+	                              <div align="center">
+	                                 <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA_in_2012_13.pdf ">OCHA in 2012-2013</a></h4>
+	                              </div>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-5 views-row-odd">
+	                           <div class="col-md-2">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHA-in-2011---cover.jpg?itok=j_m0b6xY" height="220" width="170">
+	                              <div align="center">
+	                                 <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHAin2011_0.pdf ">OCHA in 2011</a></h4>
+	                              </div>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-6 views-row-even views-row-last">
+	                           <div class="col-md-2">
+	                              <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/OCHAin2010_175x226.jpg?itok=VBvmFXHI" height="220" width="170">
+	                              <div align="center">
+	                                 <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OCHA2010_hires.pdf ">OCHA in 2010</a></h4>
+	                              </div>
+	                           </div>
+	                        </div>
+	                     </div>
+	                     <h2 class="element-invisible">Pages</h2>
+	                     <ul class="pager">
+	                        <li class="pager__item pager__item--current">1</li>
+	                        <li class="pager__item"><a title="Go to page 2" href="/page/publication?page=1">2</a></li>
+	                        <li class="pager__item"><a title="Go to page 3" href="/page/publication?page=2">3</a></li>
+	                        <li class="pager__item pager__item--next"><a title="Go to next page" href="/page/publication?page=1">next ›</a></li>
+	                        <li class="pager__item pager__item--last"><a title="Go to last page" href="/page/publication?page=2">last »</a></li>
+	                     </ul>
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <div class="container-fluid collapse grey-bk  padding-block content" id="ghoModal1" aria-hidden="true">
+	      <div class="container">
+	         <div class="card card-block">
+	            <h2>Global Humanitarian Overview</h2>
+	            <div class="l-region l-region--ocha-gho-list">
+	               <div class="panel-pane pane-views pane-publication">
+	                  <div class="view view-publication view-id-publication view-display-id-page_4 view-dom-id-330b5b6cece02bf4034c78a00adc6e20">
+	                     <div class="view-content">
+	                        <div class="views-row views-row-1 views-row-odd views-row-first">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-2">
+	                                    <table border="0">
+	                                       <tbody>
+	                                          <tr>
+	                                             <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/GHO2017.JPG?itok=Kqx9hUqJ" height="220" width="156"></td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/GHO_2017.pdf ">Global Humanitarian Overview 2017</a></h4>
+	                                             </td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <span>
+	                                                   <div class="field field-type-filefield field-field-image">
+	                                                      <div class="field-items">
+	                                                         <div class="field-item odd">
+	                                                            &nbsp;
+	                                                         </div>
+	                                                      </div>
+	                                                   </div>
+	                                                </span>
+	                                             </td>
+	                                          </tr>
+	                                       </tbody>
+	                                    </table>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-2 views-row-even">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-2">
+	                                    <table border="0">
+	                                       <tbody>
+	                                          <tr>
+	                                             <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/GHO_MYR_2016.jpg?itok=b_xcxRQ9" height="220" width="155"></td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/2016GHO_MYR_0.pdf ">Global Humanitarian Overview 2016 - Status Report</a></h4>
+	                                             </td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td><span></span></td>
+	                                          </tr>
+	                                       </tbody>
+	                                    </table>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-3 views-row-odd">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-2">
+	                                    <table border="0">
+	                                       <tbody>
+	                                          <tr>
+	                                             <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/GHO_Dec2015.jpg?itok=pN-F1GQ_" height="220" width="158"></td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/GHO-2016.pdf ">Global Humanitarian Overview 2016</a></h4>
+	                                             </td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <span>
+	                                                   <div class="field field-type-filefield field-field-image">
+	                                                      <div class="field-items">
+	                                                         <div class="field-item odd">
+	                                                            &nbsp;
+	                                                         </div>
+	                                                      </div>
+	                                                   </div>
+	                                                </span>
+	                                             </td>
+	                                          </tr>
+	                                       </tbody>
+	                                    </table>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-4 views-row-even">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-2">
+	                                    <table border="0">
+	                                       <tbody>
+	                                          <tr>
+	                                             <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/2014Appeal_0.jpg?itok=LevXGXBX" height="220" width="155"></td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/GHO2014_1.pdf ">Overview of Global Humanitarian Response 2014</a></h4>
+	                                             </td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <span>
+	                                                   <div class="field field-type-filefield field-field-image">
+	                                                      <div class="field-items">
+	                                                         <div class="field-item odd">
+	                                                            &nbsp;
+	                                                         </div>
+	                                                      </div>
+	                                                   </div>
+	                                                </span>
+	                                             </td>
+	                                          </tr>
+	                                       </tbody>
+	                                    </table>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-5 views-row-odd">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-2">
+	                                    <table border="0">
+	                                       <tbody>
+	                                          <tr>
+	                                             <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/2015Appeal_COVER.jpg?itok=TCW305FV" height="220" width="155"></td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/GHO-2015.pdf ">Global Humanitarian Overview 2015 </a></h4>
+	                                             </td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <span>
+	                                                   <div class="field field-type-filefield field-field-image">
+	                                                      <div class="field-items">
+	                                                         <div class="field-item odd">
+	                                                            &nbsp;
+	                                                         </div>
+	                                                      </div>
+	                                                   </div>
+	                                                </span>
+	                                             </td>
+	                                          </tr>
+	                                       </tbody>
+	                                    </table>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-6 views-row-even views-row-last">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-2">
+	                                    <table border="0">
+	                                       <tbody>
+	                                          <tr>
+	                                             <td> <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/medium/public/publication/images/GHO_StatusReport_June2015_cover.jpg?itok=ZpCjTX9M" height="220" width="155"></td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td>
+	                                                <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/Global%20Humanitarian%20Overview%20Final%2022%20Aug%202014.pdf ">Global Humanitarian Overview 2014 - Status Report</a></h4>
+	                                             </td>
+	                                          </tr>
+	                                          <tr>
+	                                             <td><span></span></td>
+	                                          </tr>
+	                                       </tbody>
+	                                    </table>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                     </div>
+	                     <h2 class="element-invisible">Pages</h2>
+	                     <ul class="pager">
+	                        <li class="pager__item pager__item--current">1</li>
+	                        <li class="pager__item"><a title="Go to page 2" href="/page/publication?page=1">2</a></li>
+	                        <li class="pager__item pager__item--next"><a title="Go to next page" href="/page/publication?page=1">next ›</a></li>
+	                        <li class="pager__item pager__item--last"><a title="Go to last page" href="/page/publication?page=1">last »</a></li>
+	                     </ul>
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <div class="container-fluid wow fadeInUp padding-block content" style="visibility: visible; animation-name: fadeInUp;">
+	      <div class="container">
+	         <div class="col-md-12">
+	            <h3 class="title-article">Thematic Publications</h3>
+	         </div>
+	         <div class="col-md-12">
+	            <div class="l-region l-region--thematic-publication">
+	               <div class="panel-pane pane-views pane-publication">
+	                  <div class="view view-publication view-id-publication view-display-id-block_8 view-dom-id-adaccaa00506b7cd67fddd6de5a4e028">
+	                     <div class="view-content">
+	                        <div class="views-row views-row-1 views-row-odd views-row-first">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-3">
+	                                    <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/OxfordGuidance_cover_0.jpg?itok=PFmMhzFE" height="312" width="240">
+	                                    <div align="center">
+	                                       <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/Oxford%20Guidance%20pdf.pdf ">Oxford Guidance on the Law Relating to Humanitarian Relief Operations in Situations of Armed Conflict</a></h4>
+	                                    </div>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-2 views-row-even">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-3">
+	                                    <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/SGBV_cover.jpg?itok=RvGrGdCJ" height="312" width="240">
+	                                    <div align="center">
+	                                       <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/OOM_gender_SGBV_0.pdf ">Sexual and Gender-Based Violence</a></h4>
+	                                    </div>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-3 views-row-odd">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-3">
+	                                    <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/OOM.JPG?itok=yDbu4EeP" height="312" width="240">
+	                                    <div align="center">
+	                                       <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/Gender_OOM_FINAL.pdf ">Gender in Humanitarian Action</a></h4>
+	                                    </div>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                        <div class="views-row views-row-4 views-row-even views-row-last">
+	                           <div class="views-field views-field-nothing">
+	                              <span class="field-content">
+	                                 <div class="col-md-3">
+	                                    <img typeof="foaf:Image" src="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/sites/default/files/styles/publication_thumbnail/public/publication/images/AgendaForHumanity.jpg?itok=Yi7FI1mH" height="312" width="240">
+	                                    <div align="center">
+	                                       <h4><a href="https://www.sandbox.unochaorg.568elmp03.blackmesh.com/%20">Agenda for Humanity - Annex to the Secretary-General Report for the World Humanitarian Summit</a></h4>
+	                                    </div>
+	                                 </div>
+	                              </span>
+	                           </div>
+	                        </div>
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <div class="container wow fadeInUp padding-block content" style="visibility: visible; animation-name: fadeInUp;">
+	      <div class="col-md-12">
+	         <div class="col-md-12">
+	            <h3 class="title-article">Policy Briefs and Studies</h3>
+	         </div>
+	      </div>
+	   </div>
+	   </div>
+	   <!--FOOTER-->
+	   <div class="container-fluid black-bk footer">
+	      <div class="container">
+	         <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+	            <div class="col-md-3 white ">
+	               <h4 class="white">CONTACT US</h4>
+	               <li><a href="/contact"><img class="img-responsive text-left contact-icon" src="/sites/default/files/contact.png" alt=""></a></li>
+	               <a href="/contact">
+	               </a>
+	            </div>
+	            <a href="/contact">
+	            </a>
+	            <div class="col-md-3 white ">
+	               <a href="/contact">
+	                  <h4 class="white">OCHA SITES</h4>
+	               </a>
+	               <div class="social">
+	                  <a href="/contact">
+	                  </a>
+	                  <ul class="partners">
+	                     <a href="/contact">
+	                     </a>
+	                     <li><a href="/contact">
+	                        </a><a href="http://www.unocha.org/cerf" class="link-list" target="_blank"><img src="http://www.unocha.org/sandbox/CERF.png" alt="CERF"></a>
+	                     </li>
+	                     <li>
+	                        <a href="http://gdacs.org/" class="link-list" target="_blank"><img src="http://www.unocha.org/sandbox/Gdacs.png" alt="Gdacs"></a>
+	                     </li>
+	                     <li>
+	                        <a href="https://humdata.org/" class="link-list" target="_blank"><img src="http://www.unocha.org/sandbox/HDX.png" alt="HDX"></a>
+	                     </li>
+	                     <li>
+	                        <a href="http://www.humanitarianinfo.org/iasc" class="link-list" target="_blank"><img src="http://www.unocha.org/sandbox/IASC.png" alt="IASC"></a>
+	                     </li>
+	                     <li>
+	                        <a href="http://www.insarag.org/" class="link-list" target="_blank"><img src="http://www.unocha.org/sandbox/INSARAG.png" alt="INSARAG"></a>
+	                     </li>
+	                     <li>
+	                        <a href="#" class="link-list"><img src="http://www.unocha.org/sandbox/Redhum.png" alt="Redhum"></a>
+	                     </li>
+	                     <li>
+	                        <a href="http://www.reliefweb.int/" class="link-list" target="_blank"><img src="http://www.unocha.org/sandbox/Reliefweb.png" alt="Reliefweb"></a>
+	                     </li>
+	                     <li>
+	                        <a href="http://agendaforhumanity.org/" class="link-list"><img src="http://www.unocha.org/sandbox/WHS.png" alt="WHS"></a>
+	                     </li>
+	                  </ul>
+	               </div>
+	            </div>
+	            <div class="col-md-3 white ">
+	               <h4 class="white">FOLLOW US</h4>
+	               <div class="social">
+	                  <ul>
+	                     <li><a href="https://www.facebook.com/UNOCHA" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+	                     <li><a href="http://twitter.com/unocha" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+	                     <li><a href="https://plus.google.com/111922302825259590847/posts" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+	                     <li><a href="https://www.linkedin.com/company/united-nations-ocha" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+	                     <li><a href="http://instagram.com/un_ocha" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+	                     <li><a href="http://www.youtube.com/user/ochafilms" target="_blank"><i class="fa fa-lg fa-youtube"></i></a></li>
+	                     <li><a href="#" target="_blank"><i class="fa fa-lg fa-medium"></i></a></li>
+	                  </ul>
+	               </div>
+	            </div>
+	            <div class="col-md-3 white ">
+	               <h4 class="white">SUPPORT US</h4>
+	               <p class="white">Help global relief efforts by donating to OCHA and allow humanitarian agencies to help people in need quickly and effectively </p>
+	               <a class="btn donate-top-button donate-footer-button white" id="donate" href="http://www.unfoundation.org/how-to-help/donate/support-unherf.html" target="_blank">DONATE</a>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	   <div class="container-fluid black-bk footer bottom-footer">
+	      <div class="row wow fadeInUp" style="text-align: center; visibility: hidden; animation-name: none;">
+	         <div class="col-md-12">
+	            <ul class="list-inline">
+	               <li><a href="http://www.un.org/en/aboutun/copyright/" target="_blank">Copyright</a></li>
+	               <li><a href="http://www.un.org/en/aboutun/terms/" target="_blank">Terms of Use</a></li>
+	               <li><a href="http://www.un.org/en/aboutun/privacy/" target="_blank">Privacy Notice</a></li>
+	            </ul>
+	            <span class="white center">© United Nations Office for the Coordination of Humanitarian Affairs</span>
+	         </div>
+	      </div>
+	   </div>
+	   <!--JS-->
+	   <!-- jQuery -->
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	   <!-- Bootstrap JS -->
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	   <!-- No More Lonely Words -->
+	   <script src="js/noMoreLonelyWords.js"></script>
+	   <!--Header transparency-->
+	   <script>
+	      $(document).ready(function () {
+	          $(window).scroll(function () {
+	            if ($(document).scrollTop() > 100) {
+	                $(".navbar").css("background", "rgba(65, 143, 222, 1)");
+	            } else {
+	                $(".navbar").css("background", "rgba(65, 143, 222, 1)");
+	            }
+	          });
+	      });
+	   </script>
+	   <!--Animate elements when scroll-->
+	   <script src="js/wow.js"></script>
+	   <script>
+	      new WOW().init();
+	   </script>
+	   <!--
+	      <footer id='main-footer'>
+	      
+	       </footer>
+	      
+	      -->
+	   <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e47e4f98d6","applicationID":"44799498","transactionName":"bgNRZhdZXEtTUBcPXVdJclERUV1WHV0MAldmFlJVAGdEUVdE","queueTime":0,"applicationTime":948,"atts":"QkRSEF9DT0U=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+	   <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable" style="display: none; position: absolute; top: 60px; left: 1130px; height: auto; width: 300px;" tabindex="-1" role="dialog" aria-describedby="event-popup-container" aria-labelledby="ui-id-1">
+	      <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div>
+	      <div id="event-popup-container" style="width: auto; min-height: 69px; max-height: none; height: auto;" class="ui-dialog-content ui-widget-content"></div>
+	      <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+	      <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+	   </div>
+	   <div id="cboxOverlay" style="display: none;"></div>
+	   <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+	      <div id="cboxWrapper">
+	         <div>
+	            <div id="cboxTopLeft" style="float: left;"></div>
+	            <div id="cboxTopCenter" style="float: left;"></div>
+	            <div id="cboxTopRight" style="float: left;"></div>
+	         </div>
+	         <div style="clear: left;">
+	            <div id="cboxMiddleLeft" style="float: left;"></div>
+	            <div id="cboxContent" style="float: left;">
+	               <div id="cboxTitle" style="float: left;"></div>
+	               <div id="cboxCurrent" style="float: left;"></div>
+	               <button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button>
+	               <div id="cboxLoadingOverlay" style="float: left;"></div>
+	               <div id="cboxLoadingGraphic" style="float: left;"></div>
+	            </div>
+	            <div id="cboxMiddleRight" style="float: left;"></div>
+	         </div>
+	         <div style="clear: left;">
+	            <div id="cboxBottomLeft" style="float: left;"></div>
+	            <div id="cboxBottomCenter" style="float: left;"></div>
+	            <div id="cboxBottomRight" style="float: left;"></div>
+	         </div>
+	      </div>
+	      <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+	   </div>
+	   <span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; background-image: url(&quot;https://d389zggrogs7qo.cloudfront.net/images/extensions/img/buffer-hover-icon@1x.png&quot;); background-size: 100px 25px; opacity: 0.9; cursor: pointer; top: 759.4px; left: 1705px;"></span>
+		<script>
+			var collapseitems = $('#collapse-items');
+			collapseitems.on('show.bs.collapse','.collapse', function() {
+			    collapseitems.find('.collapse.in').collapse('hide');
+			    $('div[aria-expanded="false"]').css('height','0px');
+			});
+			
+			$('a[data-toggle="collapse"]').click(function() {  
+				var item = $(this).attr('aria-controls');
+				console.log(item);
+				if (item == 'annualreportModal1' && !($('#annualreportModal1').hasClass('in')) ) {
+					$('.l-region--annual-report').addClass('active-pointer');
+					$('.l-region--plan-and-budget').removeClass('active-pointer');
+					$('.l-region--gho').removeClass('active-pointer');
+				} else {
+					$('.l-region--annual-report').removeClass('active-pointer');
+				} 
+				
+				if (item == 'planbudgetModal1' && !($('#planbudgetModal1').hasClass('in')) ) {
+					$('.l-region--annual-report').removeClass('active-pointer');
+					$('.l-region--plan-and-budget').addClass('active-pointer');
+					$('.l-region--gho').removeClass('active-pointer');
+				} else {
+					$('.l-region--plan-and-budget').removeClass('active-pointer');
+				}
+				
+				if (item == 'ghoModal1' && !($('#ghoModal1').hasClass('in')) ) {
+					$('.l-region--annual-report').removeClass('active-pointer');
+					$('.l-region--plan-and-budget').removeClass('active-pointer');
+					$('.l-region--gho').addClass('active-pointer');
+				} else {
+					$('.l-region--gho').removeClass('active-pointer');
+				}
+			
+			});
+		</script>
+	</body>
+
+
+		
+</html>
+
+
